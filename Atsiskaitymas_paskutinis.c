@@ -5,7 +5,7 @@
 
 
 
-//***************MOKINIO STRUKTURA**************************
+//***************STUDENT STRUCT**************************
 
     struct mok {
         char name[20];
@@ -14,11 +14,11 @@
         int proGrade;
     } Mokinys[10];
 
-//*******************INFO APIE MOKINIUS || IRASYMAS\SKAITYMAS I\IS FAILO(MokiniuInfo.txt)*********************
+//*******************INFO ABOUT STUDENTS || READING\WRITING TO\FROM FILE(StudentInfo.txt)*********************
 
 int mokInfo() {
 
-    FILE *f = fopen("MokiniuInfo.txt", "a");
+    FILE *f = fopen("StudentInfo.txt", "a");
     if(f == NULL)
     {
         printf("Error opening file!\n");
@@ -56,7 +56,7 @@ int mokInfo() {
         system("cls");
     }
 
-    f = fopen("MokiniuInfo.txt", "r");
+    f = fopen("StudentInfo.txt", "r");
             if(f == NULL)
             {
             printf("Error opening file!\n");
@@ -79,7 +79,7 @@ int mokInfo() {
 
 }
 
-//****************VIDURKIO FORMULE**************************
+//****************FORMULA FOR AVERAGE**************************
 
 int vidurkis(int a, int b, int c) {
     int v;
@@ -96,7 +96,7 @@ int UI() {
 
     system("pause");
     system("cls");
-    printf("What is your ID number?\n");
+    printf("What is your ID number?\n\n");
     for(i=1; i<ip ; i++) {
         printf("%d - %s.   ", i, Mokinys[i].name);
     }
@@ -132,7 +132,7 @@ int UI() {
     }
 }
 
-//**********************MAINAS***********************
+//**********************MAIN***********************
 
 int main() {
 
