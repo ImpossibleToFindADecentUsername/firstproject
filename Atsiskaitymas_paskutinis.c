@@ -81,7 +81,7 @@ int mokInfo() {
 
 //****************FORMULA FOR AVERAGE**************************
 
-int vidurkis(int a, int b, int c) {
+int average(int a, int b, int c) {
     int v;
     v = (a + b + c)/3;
     return v;
@@ -115,7 +115,7 @@ int UI() {
                 break;
         case 3: printf("\nYour programming grade is %d\n", Mokinys[i].proGrade);
                 break;
-        case 4: printf("\nYour average grade is:%d\n",vidurkis(Mokinys[i].bioGrade,Mokinys[i].mathGrade,Mokinys[i].proGrade));
+        case 4: printf("\nYour average grade is:%d\n",average(Mokinys[i].bioGrade,Mokinys[i].mathGrade,Mokinys[i].proGrade));
                 break;
         default: printf("\n<<<Incorrect choice>>>\n");
     }
